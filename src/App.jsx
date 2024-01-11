@@ -8,6 +8,13 @@ const Container = styled.div`
   width: 90%;
 `
 
+const Image = styled.img`
+  max-width: 400px;
+  width: 80%;
+  margin: 100px auto 0 auto;
+  display: block;
+`
+
 const Heading = styled.h1`
   font-family:'Lato', sans-serif;
   color: #fff;
@@ -17,6 +24,10 @@ function App() {
 
   return (
     <Container>
+      <Image
+        src={CryptoImage}
+        alt='crypto image'
+      />
       <Heading>Desde App</Heading>
       
     </Container>
