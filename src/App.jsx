@@ -28,6 +28,15 @@ const Heading = styled.h1`
   margin-top: 80px;
   margin-bottom: 50px;
   font-size: 34px;
+
+  &::after {
+    content: '';
+    width: 100px;
+    height: 6px;
+    background-color: #66a2fe;
+    display: block;
+    margin: 10px auto 0 auto;
+  }
 `
 
 function App() {
