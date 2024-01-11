@@ -33,8 +33,9 @@ function App() {
         src={CryptoImage}
         alt='crypto image'
       />
-      <Heading>Desde App</Heading>
-      
+      <div>
+      <Heading>Check Cryptocurrencies prices in real time</Heading>
+      </div>
     </Container>
   )
 }
