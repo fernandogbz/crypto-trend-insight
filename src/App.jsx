@@ -23,6 +23,11 @@ const Image = styled.img`
 const Heading = styled.h1`
   font-family:'Lato', sans-serif;
   color: #fff;
+  text-align: center;
+  font-weight: 700;
+  margin-top: 80px;
+  margin-bottom: 50px;
+  font-size: 34px;
 `
 
 function App() {
