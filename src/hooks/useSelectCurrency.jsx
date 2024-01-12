@@ -1,10 +1,10 @@
 import React from 'react'
 
-const useSelectCurrency = () => {
+const useSelectCurrency = (label) => {
   
     const SelectCurrency = () => (
         <>
-            <label>Select Currency</label>
+            <label>{label}</label>
         </>
     )
 
