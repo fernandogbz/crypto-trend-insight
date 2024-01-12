@@ -22,6 +22,9 @@ const InputSubmit = styled.input`
 
 const Form = () => {
     
+    const [ SelectCurrency ] = useSelectCurrency()
+
+    SelectCurrency()
 
   return (
     <form>
