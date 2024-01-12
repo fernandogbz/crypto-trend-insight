@@ -1,9 +1,12 @@
 import React from 'react'
 
 const useSelectCurrency = () => {
-  return (
-    <div>useSelectCurrency</div>
-  )
+  
+    const SelectCurrency = () => {
+        console.log('From select currency')
+    }
+
+    return [SelectCurrency]
 }
 
 export default useSelectCurrency
