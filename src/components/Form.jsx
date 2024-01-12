@@ -22,7 +22,7 @@ const InputSubmit = styled.input`
 
 const Form = () => {
     
-    const [ SelectCurrency ] = useSelectCurrency()
+    const [ SelectCurrency ] = useSelectCurrency('Choose your Currency')
 
     
     return (
@@ -30,7 +30,7 @@ const Form = () => {
             <SelectCurrency
             
             />
-            
+
             <InputSubmit 
                 type="submit"
                 value="Check"
