@@ -1,11 +1,15 @@
 import React from 'react'
 import styled from '@emotion/styled'
 
+const Label = styled.label`
+    color: #fff;
+`
+
 const useSelectCurrency = (label) => {
   
     const SelectCurrency = () => (
         <>
-            <label>{label}</label>
+            <Label>{label}</Label>
         </>
     )
 
