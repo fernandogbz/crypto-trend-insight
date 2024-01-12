@@ -23,13 +23,13 @@ const InputSubmit = styled.input`
 const Form = () => {
     
     const [ SelectCurrency ] = useSelectCurrency('Choose your Currency')
+    const [ SelectCryptoCurrency ] = useSelectCurrency('Choose your Cryptocurrency')
 
     
     return (
         <form>
-            <SelectCurrency
-            
-            />
+            <SelectCurrency/>
+            <SelectCryptoCurrency/>
 
             <InputSubmit 
                 type="submit"
