@@ -24,16 +24,19 @@ const Form = () => {
     
     const [ SelectCurrency ] = useSelectCurrency()
 
-    SelectCurrency()
-
-  return (
-    <form>
-        <InputSubmit 
-            type="submit"
-            value="Check"
-        />
-    </form>
-  )
+    
+    return (
+        <form>
+            <SelectCurrency
+            
+            />
+            
+            <InputSubmit 
+                type="submit"
+                value="Check"
+            />
+        </form>
+    )
 }
 
 export default Form
