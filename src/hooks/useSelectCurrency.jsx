@@ -11,7 +11,11 @@ const Label = styled.label`
     `
 
 const Select = styled.select`
-
+    width: 100%;
+    font-size: 18px;
+    padding: 14px;
+    border-radius: 10px;
+    
 `
 
 const useSelectCurrency = (label, options) => {
