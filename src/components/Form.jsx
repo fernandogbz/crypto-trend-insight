@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from '@emotion/styled'
 import useSelectCurrency from '../hooks/useSelectCurrency'
+import { currencies } from '../data/currencies'
 
 const InputSubmit = styled.input`
     background-color: #9497ff;
