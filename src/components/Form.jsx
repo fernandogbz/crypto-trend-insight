@@ -6,6 +6,7 @@ import { currencies } from '../data/currencies'
 const InputSubmit = styled.input`
     background-color: #9497ff;
     border: none;
+    margin-top: 30px;
     width: 100%;
     padding: 10px;
     color: #fff;
