@@ -22,13 +22,6 @@ const InputSubmit = styled.input`
 
 const Form = () => {
     
-    const currencies = [
-        {id: 'USD', name: 'US Dollar'},
-        {id: 'MXN', name: 'Mexican Peso'},
-        {id: 'EUR', name: 'Euro'},
-        {id: 'GBP', name: 'UK Pound'},
-    ]
-
     const [ SelectCurrency ] = useSelectCurrency('Choose your Currency', currencies)
     
 
