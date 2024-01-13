@@ -5,11 +5,15 @@ const Label = styled.label`
     color: #fff;
 `
 
-const useSelectCurrency = (label) => {
+const useSelectCurrency = (label, options) => {
   
     const SelectCurrency = () => (
         <>
             <Label>{label}</Label>
+            <select>
+                <option value="">Select</option>
+
+            </select>
         </>
     )
 
