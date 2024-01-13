@@ -8,6 +8,10 @@ const Label = styled.label`
     font-size: 24px;
     font-weight: 700;
     margin: 15px 0;
+    `
+
+const Select = styled.select`
+
 `
 
 const useSelectCurrency = (label, options) => {
@@ -15,7 +19,7 @@ const useSelectCurrency = (label, options) => {
     const SelectCurrency = () => (
         <>
             <Label>{label}</Label>
-            <select>
+            <Select>
                 <option value="">Select</option>
 
                 {options.map(option => (
@@ -25,7 +29,7 @@ const useSelectCurrency = (label, options) => {
                     
                     >{option.name}</option>
                 ))}
-            </select>
+            </Select>
         </>
     )
 
