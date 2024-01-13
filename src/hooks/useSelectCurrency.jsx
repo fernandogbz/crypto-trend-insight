@@ -13,6 +13,13 @@ const useSelectCurrency = (label, options) => {
             <select>
                 <option value="">Select</option>
 
+                {options.map(option => (
+                    <option
+                        key={option.id}
+                        value={option.id} //This is the value the state is gonna take
+                    
+                    >{option.name}</option>
+                ))}
             </select>
         </>
     )
