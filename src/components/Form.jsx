@@ -29,7 +29,7 @@ const Form = () => {
         {id: 'GBP', name: 'UK Pound'},
     ]
 
-    const [ SelectCurrency ] = useSelectCurrency('Choose your Currency')
+    const [ SelectCurrency ] = useSelectCurrency('Choose your Currency', currencies)
     
 
     
