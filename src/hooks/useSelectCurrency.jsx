@@ -20,6 +20,7 @@ const Select = styled.select`
 
 const useSelectCurrency = (label, options) => {
     
+    const [state, setState] = useState('')
 
     const SelectCurrency = () => (
         <>
