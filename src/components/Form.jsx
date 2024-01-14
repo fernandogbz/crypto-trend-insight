@@ -31,7 +31,6 @@ const Form = () => {
     return (
         <form>
             <SelectCurrencies
-            
             />
             
             <InputSubmit 
