@@ -18,11 +18,11 @@ const Select = styled.select`
     
 `
 
-const useSelectCurrency = (label, options) => {
+const useSelectCurrencies = (label, options) => {
     
     const [state, setState] = useState('')
 
-    const SelectCurrency = () => (
+    const SelectCurrencies = () => (
         <>
             <Label>{label}</Label>
             <Select
@@ -42,7 +42,7 @@ const useSelectCurrency = (label, options) => {
         </>
     )
 
-    return [state, SelectCurrency]
+    return [state, SelectCurrencies]
 }
 
-export default useSelectCurrency
+export default useSelectCurrencies
