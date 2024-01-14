@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from '@emotion/styled'
-import useSelectCurrency from '../hooks/useSelectCurrency'
+import useSelectCurrencies from '../hooks/useSelectCurrencies'
 import { currencies } from '../data/currencies'
 
 const InputSubmit = styled.input`
@@ -24,13 +24,13 @@ const InputSubmit = styled.input`
 
 const Form = () => {
     
-    const [ SelectCurrency ] = useSelectCurrency('Choose your Currency', currencies)
+    const [ SelectCurrencies ] = useSelectCurrencies('Choose your Currency', currencies)
     
 
     
     return (
         <form>
-            <SelectCurrency/>
+            <SelectCurrencies/>
 
             <InputSubmit 
                 type="submit"
