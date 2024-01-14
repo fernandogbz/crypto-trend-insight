@@ -24,7 +24,7 @@ const InputSubmit = styled.input`
 
 const Form = () => {
     
-    const [ state, SelectCurrencies ] = useSelectCurrencies('Choose your Currency', currencies)
+    const [ currency, SelectCurrencies ] = useSelectCurrencies('Choose your Currency', currencies)
     
 
     
