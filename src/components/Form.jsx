@@ -45,7 +45,7 @@ const Form = () => {
             return object
         })
 
-        console.log(cryptosArray)
+        setCryptos(cryptosArray)
       }
       queryAPI();
     }, [])
