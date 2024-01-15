@@ -24,6 +24,7 @@ const InputSubmit = styled.input`
 
 const Form = () => {
 
+    const [cryptos, setCryptos] = useState([])
     
     const [ currency, SelectCurrencies ] = useSelectCurrencies('Choose your Currency', currencies)
     
