@@ -1,4 +1,4 @@
-import {useEffect} from 'react'
+import {useEffect, useState} from 'react'
 import styled from '@emotion/styled'
 import useSelectCurrencies from '../hooks/useSelectCurrencies'
 import { currencies } from '../data/currencies'
@@ -23,6 +23,7 @@ const InputSubmit = styled.input`
 `
 
 const Form = () => {
+
     
     const [ currency, SelectCurrencies ] = useSelectCurrencies('Choose your Currency', currencies)
     
