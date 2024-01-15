@@ -53,8 +53,8 @@ const Form = () => {
     
     return (
         <form>
-            <SelectCurrencies
-            />
+            <SelectCurrencies/>
+            <SelectCryptocurrency/>
             
             <InputSubmit 
                 type="submit"
