@@ -1,4 +1,4 @@
-import React from 'react'
+import {useEffect} from 'react'
 import styled from '@emotion/styled'
 import useSelectCurrencies from '../hooks/useSelectCurrencies'
 import { currencies } from '../data/currencies'
