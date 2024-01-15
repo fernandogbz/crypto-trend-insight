@@ -40,8 +40,10 @@ const Form = () => {
                 name: crypto.CoinInfo.FullName
             }
 
-            console.log(object)
+            return object
         })
+
+        console.log(cryptosArray)
       }
       queryAPI();
     }, [])
