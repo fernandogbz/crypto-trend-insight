@@ -29,7 +29,7 @@ const Form = () => {
     // This effect will execute when the component is loaded, since it has no dependency, it will be executed just once, when it's ready and going to query our API, bring us the results.That is ideal, that it should only be consulted once when the entire document is ready.
     useEffect(() => {
       const queryAPI = async () => {
-
+        const url = "https://min-api.cryptocompare.com/data/top/mktcapfull?limit=20&tsym=USD"
       }
       queryAPI();
     }, [])
