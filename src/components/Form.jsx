@@ -34,8 +34,13 @@ const Form = () => {
         const result = await response.json()
 
         const cryptosArray = result.Data.map(crypto => {
-            console.log(crypto.CoinInfo.Name)
-            console.log(crypto.CoinInfo.FullName)
+
+            const object = {
+                id: crypto.CoinInfo.Name,
+                name: crypto.CoinInfo.FullName
+            }
+
+            console.log(object)
         })
       }
       queryAPI();
