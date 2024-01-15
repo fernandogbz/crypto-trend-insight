@@ -27,6 +27,7 @@ const Form = () => {
     const [cryptos, setCryptos] = useState([])
     
     const [ currency, SelectCurrencies ] = useSelectCurrencies('Choose your Currency', currencies)
+    const [ cryptocurrency, SelectCryptocurrency ] = useSelectCurrencies('Choose your Cryptocurrency', cryptos)
     
     // This effect will execute when the component is loaded, since it has no dependency, it will be executed just once, when it's ready and going to query our API, bring us the results.That is ideal, that it should only be consulted once when the entire document is ready.
     useEffect(() => {
