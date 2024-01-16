@@ -56,7 +56,7 @@ const Form = () => {
         e.preventDefault()
 
         if([currency, cryptocurrency].includes('')) {
-            console.log('Error')
+            setError(true)
 
             return
         }
