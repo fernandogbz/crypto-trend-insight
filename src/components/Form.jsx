@@ -1,5 +1,6 @@
 import {useEffect, useState} from 'react'
 import styled from '@emotion/styled'
+import Error from './Error'
 import useSelectCurrencies from '../hooks/useSelectCurrencies'
 import { currencies } from '../data/currencies'
 
