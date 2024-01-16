@@ -54,7 +54,11 @@ const Form = () => {
     const handleSubmit = e => {
         e.preventDefault()
 
-        console.log('Sending form')
+        if([currency, cryptocurrency].includes('')) {
+            console.log('Error')
+
+            return
+        }
     }
 
     return (
