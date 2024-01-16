@@ -51,6 +51,12 @@ const Form = () => {
       queryAPI();
     }, [])
     
+    const handleSubmit = e => {
+        e.preventDefault()
+
+        console.log('Sending form')
+    }
+
     return (
         <form
             onSubmit={handleSubmit}
