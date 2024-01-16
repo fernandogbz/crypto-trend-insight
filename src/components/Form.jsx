@@ -52,7 +52,9 @@ const Form = () => {
     }, [])
     
     return (
-        <form>
+        <form
+            onSubmit={handleSubmit}
+        >
             <SelectCurrencies/>
             <SelectCryptocurrency/>
             
