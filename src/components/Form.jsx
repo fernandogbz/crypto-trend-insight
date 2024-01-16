@@ -58,9 +58,10 @@ const Form = () => {
 
         if([currency, cryptocurrency].includes('')) {
             setError(true)
-
             return
         }
+
+        setError(false)
     }
 
     return (
