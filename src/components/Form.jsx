@@ -65,8 +65,8 @@ const Form = () => {
 
     return (
         <>
-            {error && <p // if error is true, show error message on screen
-            >All fields are required</p>} 
+            {error && <Error // if error is true, show error message on screen
+            >All fields are required</Error>} 
             <form
                 onSubmit={handleSubmit}
             >
