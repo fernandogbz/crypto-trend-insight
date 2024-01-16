@@ -63,17 +63,21 @@ const Form = () => {
     }
 
     return (
-        <form
-            onSubmit={handleSubmit}
-        >
-            <SelectCurrencies/>
-            <SelectCryptocurrency/>
-            
-            <InputSubmit 
-                type="submit"
-                value="Check"
-            />
-        </form>
+        <>
+            {error && <p // if error is true, show error message on screen
+            >All fields are required</p>} 
+            <form
+                onSubmit={handleSubmit}
+            >
+                <SelectCurrencies/>
+                <SelectCryptocurrency/>
+                
+                <InputSubmit 
+                    type="submit"
+                    value="Check"
+                />
+            </form>
+        </>
     )
 }
 
