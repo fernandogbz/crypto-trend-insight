@@ -51,7 +51,7 @@ function App() {
         const url = `https://min-api.cryptocompare.com/data/pricemultifull?fsyms=${cryptocurrency}&tsyms=${currency}` // API url
 
         const response = await fetch(url)
-        
+        const result = await response.json()
       }
       checkCrypto();
     }
