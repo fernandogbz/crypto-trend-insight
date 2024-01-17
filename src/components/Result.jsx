@@ -1,8 +1,10 @@
-import React from 'react'
+import styled from '@emotion/styled'
 
 const Result = () => {
   return (
-    <div>Result</div>
+    <div>
+        <h1>From Result</h1>
+    </div>
   )
 }
 
