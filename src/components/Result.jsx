@@ -3,8 +3,11 @@ import styled from '@emotion/styled'
 const Container = styled.div`
     color: #fff;
     font-family: 'Lato', sans-serif;
-
+    
     display: flex;
+`
+const Image = styled.img`
+    display: block;
 `
 
 const Text = styled.p`
@@ -21,11 +24,14 @@ const Price = styled.div`
     }
 `
 
+
 const Result = ({result}) => {
     const {PRICE, HIGHDAY, LOWDAY, CHANGEPCT24HOUR, IMAGEURL, LASTUPDATE} = result
   return (
     <Container>
-        <img src={`https://cryptocompare.com/${IMAGEURL}`} alt="crypto image" />
+        <Image 
+            src={`https://cryptocompare.com/${IMAGEURL}`} 
+            alt="crypto image" />
         <div>
             <Price>Price is: <span>{PRICE}</span></Price>
             <Text>Highest price of the day: <span></span>{HIGHDAY}</Text>
