@@ -74,7 +74,9 @@ function App() {
         <Form 
           setCurrencies={setCurrencies}
         />
-        {result.PRICE && <Result />}
+        {result.PRICE && <Result 
+          result={result} 
+        />}
       </div>
 
     </Container>
