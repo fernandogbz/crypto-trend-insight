@@ -46,7 +46,10 @@ function App() {
 
   useEffect(() => {
     if(Object.keys(currencies).length > 0){
-      console.log(currencies)
+      const checkCrypto = async () =>{
+
+      }
+      checkCrypto();
     }
   }, [currencies])
 
