@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import styled from '@emotion/styled'
 import Form from './components/Form'
 import CryptoImage from './img/crypto-image.png'
