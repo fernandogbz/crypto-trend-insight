@@ -44,6 +44,12 @@ function App() {
 
   const [currencies, setCurrencies] = useState({})  
 
+  useEffect(() => {
+    if(Object.keys(currencies).length > 0){
+      console.log(currencies)
+    }
+  }, [currencies])
+
   return (
     <Container>
 
