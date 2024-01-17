@@ -42,7 +42,8 @@ const Heading = styled.h1`
 
 function App() {
 
-  const [currencies, setCurrencies] = useState({})  
+  const [currencies, setCurrencies] = useState({}) 
+  const [result, setResult] = useState({}) 
 
   useEffect(() => {
     if(Object.keys(currencies).length > 0){
