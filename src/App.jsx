@@ -55,7 +55,9 @@ function App() {
       <div>
         <Heading>Check Cryptocurrencies prices in real time</Heading>
 
-        <Form />
+        <Form 
+          setCurrencies={setCurrencies}
+        />
       </div>
 
     </Container>
