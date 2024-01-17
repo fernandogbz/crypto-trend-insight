@@ -5,9 +5,13 @@ const Container = styled.div`
     font-family: 'Lato', sans-serif;
     
     display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 30px;
 `
 const Image = styled.img`
     display: block;
+    width: 100px;
 `
 
 const Text = styled.p`
