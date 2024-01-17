@@ -58,6 +58,10 @@ const Form = () => {
 
         if([currency, cryptocurrency].includes('')) {
             setError(true)
+            
+            setTimeout(() => {
+                setError(false)
+            }, 3000);
             return
         }
 
