@@ -80,7 +80,7 @@ function App() {
         <Form 
           setCurrencies={setCurrencies}
         />
-        {loading && <p>Loading...</p>}
+        {loading && <Spinner/>}
         {result.PRICE && <Result 
           result={result} 
         />}
