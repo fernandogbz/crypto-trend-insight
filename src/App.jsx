@@ -52,6 +52,7 @@ function App() {
 
         const response = await fetch(url)
         const result = await response.json()
+        console.log(result.DISPLAY[cryptocurrency][currency]) //look for a property on that object, which have the name of the cryptocurrency and the currency, which will be the three digits
       }
       checkCrypto();
     }
