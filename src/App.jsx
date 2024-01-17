@@ -49,13 +49,17 @@ function App() {
 
   useEffect(() => {
     if(Object.keys(currencies).length > 0){
+
       const checkCrypto = async () =>{
+        setLoading(true)
+
         const {currency, cryptocurrency} = currencies // object destructuring to get currency and cryptocurrency from currencies object
         const url = `https://min-api.cryptocompare.com/data/pricemultifull?fsyms=${cryptocurrency}&tsyms=${currency}` // API url
 
         const response = await fetch(url)
         const result = await response.json()
         setResult(result.DISPLAY[cryptocurrency][currency]) //look for a property on that object, which have the name of the cryptocurrency and the currency, which will be the three digits
+        setLoading(false)
       }
       checkCrypto();
     }
@@ -75,6 +79,7 @@ function App() {
         <Form 
           setCurrencies={setCurrencies}
         />
+        {loading && <p>Loading...</p>}
         {result.PRICE && <Result 
           result={result} 
         />}
