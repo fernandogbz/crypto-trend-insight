@@ -50,7 +50,8 @@ function App() {
         const {currency, cryptocurrency} = currencies // object destructuring to get currency and cryptocurrency from currencies object
         const url = `https://min-api.cryptocompare.com/data/pricemultifull?fsyms=${cryptocurrency}&tsyms=${currency}` // API url
 
-        console.log(url)
+        const response = await fetch(url)
+        
       }
       checkCrypto();
     }
