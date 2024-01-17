@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import styled from '@emotion/styled'
 import Form from './components/Form'
 import Result from './components/Result'
+import Spinner from './components/Spinner'
 import CryptoImage from './img/crypto-image.png'
 
 const Container = styled.div`
