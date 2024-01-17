@@ -48,7 +48,9 @@ function App() {
     if(Object.keys(currencies).length > 0){
       const checkCrypto = async () =>{
         const {currency, cryptocurrency} = currencies // object destructuring to get currency and cryptocurrency from currencies object
-        const url = `https://min-api.cryptocompare.com/data/pricemultifull?fsyms=BTC&tsyms=USD,EUR` // API url
+        const url = `https://min-api.cryptocompare.com/data/pricemultifull?fsyms=${cryptocurrency}&tsyms=${currency}` // API url
+
+        console.log(url)
       }
       checkCrypto();
     }
