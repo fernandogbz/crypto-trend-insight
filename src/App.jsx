@@ -42,6 +42,8 @@ const Heading = styled.h1`
 
 function App() {
 
+  const [currencies, setCurrencies] = useState({})  
+
   return (
     <Container>
 
