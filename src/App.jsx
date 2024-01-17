@@ -47,7 +47,7 @@ function App() {
   useEffect(() => {
     if(Object.keys(currencies).length > 0){
       const checkCrypto = async () =>{
-
+        const url = `https://min-api.cryptocompare.com/data/pricemultifull?fsyms=BTC&tsyms=USD,EUR`
       }
       checkCrypto();
     }
