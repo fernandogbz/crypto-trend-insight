@@ -45,6 +45,7 @@ function App() {
 
   const [currencies, setCurrencies] = useState({}) 
   const [result, setResult] = useState({}) 
+  const [loading, setLoading] = useState(false) 
 
   useEffect(() => {
     if(Object.keys(currencies).length > 0){
